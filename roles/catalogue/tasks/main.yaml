@@ -11,7 +11,7 @@
 - name: set-up application
   ansible.builtin.import_role:
     name: common
-    tasks_from: systemd-setup
+    tasks_from: app-setup
 
 - name: install the dependencies.
   ansible.builtin.command: npm install
