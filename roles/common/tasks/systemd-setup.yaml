@@ -4,7 +4,7 @@
       dest: /etc/systemd/system/{{component}}.service
       
  - name: daemon reload
-    ansible.builtin.systemd:
-      daemon_reload: true
-      state: restarted
-      name: "{{component}}"
+   ansible.builtin.systemd:
+     daemon_reload: true
+     state: restarted
+     name: "{{component}}"
