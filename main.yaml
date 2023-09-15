@@ -1,5 +1,0 @@
-- name: install roboshop project
-  hosts: "{{component}}"
-  become: yes  #root access
-  roles: 
-  - "{{component}}"
